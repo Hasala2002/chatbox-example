@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body{
+    overflow: hidden;
+}
+.chatbox{
+    background-image: url("bg.jpg");
+    background-size: 100% auto;
+    background-blend-mode: overlay;
+    width: 30%;
+    height: 95%;
+    background-color: #424141;
+    border: 5px solid teal;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+}
+
+.chatin{
+    align-self: flex-start;
+
+    margin: 2px;
+
+    background-color: #222222;
+  
+    padding: 5px;
+
+  align-items: center;
+  overflow: hidden;
+  min-height: 10px;
+  border-radius: 10px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.chatout{
+    align-self: flex-end;
+    margin: 2px;
+
+    background-color: forestgreen;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+
+  align-items: center;
+  overflow: hidden;
+  max-width: 60%;
+  border-radius: 10px 10px 0px 10px;
+
+}
+
+.message{
+    font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.timestampin{
+    font-family: 'Montserrat';
+    font-size: 7px;
+    font-weight: 500;
+    color: white;
+    align-self: flex-start;
+}
+
+.timestampout{
+    font-family: 'Montserrat';
+    font-size: 7px;
+    font-weight: 500;
+    color: white;
+    align-self: flex-end;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+  color: white;
+}
+
+.line{
+margin-top: -20px;
+}
+.box1{
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  opacity: 0;
+  animation: box1 1.5s infinite;
+    animation-timing-function: ease-out; 
+ animation-fill-mode: forwards;
+  border-radius: 1.5px;
+}
+.box2{
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+   background-color: white;
+  animation-delay: 0.5s;
+  animation: box2 1.5s infinite;
+    animation-timing-function: ease; 
+ animation-fill-mode: forwards;
+   border-radius: 1.5px;
+}
+.box3{
+  display: inline-block;
+  height: 5px;
+  width: 5px;
+  background-color: white;
+  animation-delay: 1s;
+  animation: box3 1.5s infinite;
+    animation-timing-function: ease; 
+ animation-fill-mode: forwards;
+   border-radius: 1.5px;
+}
+
+.pen{
+  margin-left: -3.1px;
+  margin-bottom: 5px;
+  animation: pen1 1.5s infinite;
+  animation-timing-function: ease; 
+ animation-fill-mode: forwards;
+}
+
+@keyframes pen1{
+  from{margin-left: -3.1px;}
+  to{margin-left: 15px;}
+}
+
+@keyframes box1{
+  0%{opacity:0;}
+  33%{opacity:1;}
+}
+
+@keyframes box2{
+   0%{opacity:0;}
+  33%{opacity:0;}
+  66%{opacity:1;}
+  100%{opacity:0;}
+}
+
+@keyframes box3{
+   0%{opacity:0;}
+  33%{opacity:0;}
+  66%{opacity:0;}
+  100%{opacity:1;}
+}
+
+
+.incoming{
+  align-self: flex-start;
+  margin: 2px;
+  background-color: #222222;
+  padding: 5px;
+  align-items: center;
+  overflow: hidden;
+  min-height: 10px;
+  border-radius: 10px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  min-width: 50px;
+}
