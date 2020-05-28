@@ -1,11 +1,12 @@
 <html>
     <head>
         <link href="styles.css" rel="stylesheet">
+        <script src="main.js"></script> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div class="chatbox">
-            <div class="chat">
+            <div class="chat" id="chat">
 <div class="chatout">
     <span class="message"> Hello!</span>
     <span class="timestampout">09.00 am</span>
@@ -53,9 +54,9 @@
     <div class="emoji">
         <i class="material-icons send">emoji_emotions</i>
     </div>
-<input>
+<input id="msgbox" placeholder="Type a message....">
 <div class="btn">
-    <i class="material-icons send">send</i>
+    <i class="material-icons send" onclick="sendmsg()">send</i>
 </div>
 </div>
         </div>

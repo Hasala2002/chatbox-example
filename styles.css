@@ -20,6 +20,7 @@ body{
     bottom: 0; */
 }
 
+
 @media only screen and (max-width: 600px) {
     .chatbox{width: 100%; height: 100%;}
 }
@@ -30,9 +31,14 @@ body{
     flex-direction: column;
     padding: 5px;
     align-self: flex-end;
-    overflow-y: scroll;
+    overflow: scroll;
+    height: 100%;
     /* -ms-overflow-style: none; */
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
+    scrollbar-color: rgba(255, 255, 255, 0.288) rgba(255, 255, 255, 0);
+    scrollbar-width: thin;
+    /* scrollbar-highlight-color: rgba(0, 0, 0, 0.336); */
+    /* scrollbar: 2px; */
 }
 
 .chat::-webkit-scrollbar {
