@@ -33,8 +33,7 @@ body{
     align-self: flex-end;
     overflow: scroll;
     height: 100%;
-    width: 97%;
-    justify-content: flex-end;
+    width: 98%;
     /* -ms-overflow-style: none; */
     /* scrollbar-width: none; */
     scrollbar-color: rgba(255, 255, 255, 0.288) rgba(255, 255, 255, 0);
@@ -50,10 +49,9 @@ body{
 .chatin{
     
   align-self: flex-start;
-  background-color: #222222;
-  justify-self: flex-end;
-  padding: 5px;
   margin: 5px;
+  background-color: #222222;
+  padding: 5px;
   align-items: center;
   /* overflow: hidden; */
   /* min-height: 10px; */
@@ -62,12 +60,15 @@ body{
   flex-direction: column;
   max-width: 60%;
   min-height: 25px;
+  margin-top: auto;
   display: table;
+  /* justify-self: flex-end; */
 }
 
 .chatout{
+  /* justify-self: flex-end; */
+  margin-top: auto;
   align-self: flex-end;
-  justify-self: flex-end;
   margin: 5px;
   background-color: forestgreen;
   padding: 5px;
@@ -244,8 +245,6 @@ input{
     font-family: 'Montserrat';
     font-size: 14px;
     font-weight: 500;
-    text-align: right;
-
 }
 
 .btn{
@@ -275,7 +274,3 @@ input{
      text-align: center;
      display: flex;
  }
-
- input:focus, textarea:focus, select:focus{
-  outline: none;
-}

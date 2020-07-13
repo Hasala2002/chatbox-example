@@ -60,10 +60,8 @@ input=document.getElementById("msgbox");
 textmsg=stripHtml(input.value);
     if (textmsg != ""){
     var chat = document.getElementById('chat');
-    chat.scrollTop=+860;
-    console.log(chat.scrollTop);
     var message = document.getElementById('msgbox').value;
-chat.insertAdjacentHTML('beforeend','<div class="chatout"><span class="message">'+message+'</span><span class="timestampout">'+timestamp+'</span></div>');
+chat.insertAdjacentHTML('beforeend','<div class="chatout" style="margin-top:5px"><span class="message">'+message+'</span><span class="timestampout">'+timestamp+'</span></div>');
 document.getElementById('msgbox').value="";
 replymsg = getReply(textmsg);
 
@@ -82,6 +80,7 @@ function newmsg(){
     input=document.getElementById("input");
     textmsg=stripHtml(input.value);
     if(textmsg !== ""){
+
     chat.insertAdjacentHTML('beforeend', '<div class="msg out">'+textmsg+'</div>');
     input.value="";   
     replymsg = getReply(textmsg);
@@ -95,5 +94,6 @@ function newmsg(){
 function reply(answer){
     var chat = document.getElementById('chat');
     // chat.insertAdjacentHTML('beforeend', '<div class="msg in">'+answer+'</div>');
-    chat.insertAdjacentHTML('beforeend','<div class="chatin"><span class="message">'+answer+'</span></div>');
+    chat.insertAdjacentHTML('beforeend','<div class="chatin" style="margin-top:5px"><span class="message">'+answer+'</span></div>');
+    chat.scrollTop = chat.scrollHeight; 
 }
