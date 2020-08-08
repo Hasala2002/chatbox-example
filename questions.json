@@ -2,7 +2,7 @@
 [
     {
     "question":"Hello",
-    "questiondiffsyntax": ["hello","hi","hello!","hi!","HELLO"],
+    "questiondiffsyntax": ["hello","hi","hello!","Hi!","HELLO"],
     "keywords":["keyword1", "keyword2", "keyword3","keyword4","keyword5"],
     "reply": "Hello to you too!"
 },
